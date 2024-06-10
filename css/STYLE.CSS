@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: url(../images/wp3152292.jpg);
+  background-size: cover;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-size: 315%;
+    background-position-x: 50%;
+  }
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.322);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  width: fit-content;
+  color: white;
+  position: relative;
+  bottom: 40px;
+}
+.inputBox {
+  display: flex;
+  position: relative;
+}
+.inputBox input {
+  margin-top: 5px;
+  padding: 22px 44px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.397);
+  border: none;
+  caret-color: #556941;
+}
+.inputBox i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  color: #556941;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 10px;
+}
+.main .footer input {
+  margin-right: 50px;
+}
+::placeholder {
+  color: white;
+  font: 20px;
+}
+.footer div,
+footer label {
+  cursor: pointer;
+  color: white;
+}
+input[type="submit"] {
+  background-color: aliceblue;
+  padding: 20px 5px;
+  width: 300px;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  color: navajowhite;
+  left: 47%;
+  transform: translateX(-50%);
+  padding-bottom: 60px;
+}
+.copyright i {
+  margin-right: 10px;
+}
+form input:focus {
+  outline: none;
+}
